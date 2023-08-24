@@ -19,7 +19,7 @@ const FormikContainer = () => {
       onSubmit={onSubmit}
     >
       {(formik) => (
-        <Form>
+        <Form className="m-6 px-4 border-black">
           <FormikControl
             control="input"
             type="email"
