@@ -1,6 +1,7 @@
 import React from "react";
 import Input from "./Input";
 import TextArea from "./TextArea";
+import Select from "./Select";
 function FormikControl(props) {
   const dropdownOptions = [
     { key: "Select an option", value: "" },
@@ -9,10 +10,11 @@ function FormikControl(props) {
     { key: "Option 3", value: "option3" },
   ];
 
-const initialValues=(
-  email:'',
-  description:''
-)
+  const initialValues = {
+    email: "",
+    description: "",
+    selectOption: "",
+  };
 
   const { control, ...rest } = props;
   switch (control) {
